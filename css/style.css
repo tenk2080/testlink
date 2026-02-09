@@ -13,9 +13,7 @@ html,body{
     top:0;
 
 }
-.header_container{
-    
-}
+ 
 .task {
     padding: 10px 12px;
     border: 1px solid rgba(30, 10, 60, 0.12);
@@ -38,6 +36,46 @@ html,body{
     align-items: center;
     gap: 8px;
   }
+  .task__action {
+    width: 26px;
+    height: 26px;
+    border: 1px solid rgba(30, 10, 60, 0.12);
+    border-radius: 6px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .task__action:hover {
+    background: #f6f4ff;
+    border-color: rgba(30, 10, 60, 0.2);
+    box-shadow: 0 6px 12px rgba(126, 102, 205, 0.18);
+  }
+
+  .task__action:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(126, 102, 205, 0.22);
+  }
+  .task__action:active {
+    transform: translateY(1px);
+  }
+  .task__icon {
+    width: 14px;
+    height: 14px;
+    display: block;
+  }
+  .footer-controls {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;  
+    margin-top: 4px; 
+}
+.footer-controls__counters {
+  font-size: 13px;  
+  color: #4600e9; /* Цвет текста */
+  padding-left: 5px;  
+}
   
   
   
