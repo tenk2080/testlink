@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TaskLite — Kanban</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="kanban">
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__title">TaskLite</div>
+        <nav class="tabs">
+          <a href="index.html" class="tab">To Do</a>
+          <a href="kanban.html" class="tab active">Kanban</a>
+          <a href="habits.html" class="tab">Привычки</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h1 class="page-title">Доска задач</h1>
+      <div class="board">
+        <div class="column" data-status="todo">
+          <div class="column__header">
+            <h2>To Do</h2>
+            <span class="column__count">0</span>
+          </div>
+          <div class="task-list">
+            <article class="task kanban">
+              <h3 class="task__title">Прочитать документации</h3>
+              <p class="task__desc">
+                Разобраться с методами drag&amp;drop API и локальным
+                сохранением.
+              </p>
+              <footer class="task__footer">
+                <span class="task__label high">Высокий приоритет</span>
+                <time class="task__date">до 12.11</time>
+              </footer>
+            </article>
+            <article class="task kanban">
+              <h3 class="task__title">Сверстать главную страницу</h3>
+              <p class="task__desc">
+                Создать адаптивную сетку и добавить стили для хедера и кнопок.
+              </p>
+              <footer class="task__footer">
+                <span class="task__label medium">Средний приоритет</span>
+                <time class="task__date">до 15.11</time>
+              </footer>
+            </article>
+          </div>
+          <button class="add-task">+ Добавить задачу</button>
+        </div>
+        <div class="column" data-status="in-progress">
+          <div class="column__header">
+            <h2>In Progress</h2>
+            <span class="column__count">0</span>
+          </div>
+          <div class="task-list">
+            <article class="task kanban">
+              <h3 class="task__title">Настроить стили</h3>
+              <p class="task__desc">
+                Согласовать цветовую схему и тени, привести отступы к системе 8
+                px.
+              </p>
+              <footer class="task__footer">
+                <span class="task__label low">Низкий приоритет</span>
+                <time class="task__date">до 10.11</time>
+              </footer>
+            </article>
+          </div>
+          <button class="add-task">+ Добавить задачу</button>
+        </div>
+        <div class="column" data-status="done">
+          <div class="column__header">
+            <h2>Done</h2>
+            <span class="column__count">0</span>
+          </div>
+          <div class="task-list">
+            <article class="task kanban">
+              <h3 class="task__title">Сверстать страницу</h3>
+              <p class="task__desc">Написать разметку раздела канбан</p>
+              <footer class="task__footer">
+                <span class="task__label medium">Средний приоритет</span>
+                <time class="task__date">до 15.11</time>
+              </footer>
+            </article>
+          </div>
+          <button class="add-task">+ Добавить задачу</button>
+        </div>
+      </div>
+    </main>
+    <script src="kanban.js"></script>
+  </body>
+</html>
