@@ -23,7 +23,7 @@ function renderBoard() {
                 <footer class="task__footer">
                 <span class="task__label ${task.priority}">${task.priorityText}</span>
                 <time class="task__date">${task.deadline ? escapeHtml(task.deadline) : ""}</time>
-                </footer>
+                 </footer>
             `;
       addDragEvents(el);
       taskList.appendChild(el);

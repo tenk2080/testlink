@@ -22,6 +22,7 @@ html, body {
     z-index: 10;
     border-bottom: 1px solid rgba(0, 0, 0, .05);
     background: rgba(255, 255, 255, .65);
+    border-color: #819fc9;
 }
 
 .header__container{
@@ -67,6 +68,8 @@ html, body {
     radial-gradient(1200px 900px at 50% 85%, #e6eef6 0%, transparent 60%),
     linear-gradient(#f6f3f9, #fbfaf8);
   background-attachment: fixed;
+  border-radius: 5px;
+  border-color: #64748b;
 }
 .kanban {
   background:
@@ -74,6 +77,8 @@ html, body {
     radial-gradient(1200px 900px at 80% 35%, #f6f4e4 0%, transparent 60%),
     radial-gradient(1200px 900px at 50% 85%, #e6f6f4 0%, transparent 60%),
     linear-gradient(#f6f3f9, #fbfaf8);
+     border-radius: 5px;
+  border-color: #64748b;
   background-attachment: fixed;
 }
 .page-title {
@@ -123,7 +128,7 @@ html, body {
   color: #5e5472;
 }
 
-.task{
+.tasks{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -132,8 +137,8 @@ html, body {
     padding: 10px 12px;
     border-radius: 8px;
     margin-bottom: 15px;
-    background: #fff;
-    border: 1px solid rgba(30, 10, 60, 0.12);
+ 
+    
 }
 .task__todo{
     display: flex;
@@ -144,7 +149,7 @@ html, body {
     padding: 10px 12px;
     border-radius: 8px;
     margin-bottom: 15px;
-    background: #fff;
+     background: #f1cdfa;
     border: 1px solid rgba(30, 10, 60, 0.12);
 }
 
@@ -222,7 +227,8 @@ html, body {
     padding: 20px;
 }
 .column{
-    background: rgba(255, 255, 255, 0.9);
+    background: #f1cdfa;
+     
     border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 16px;
     width: 320px;
